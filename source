@@ -1,0 +1,84 @@
+-- Bruh.exe
+-- Version: 0.1
+
+-- Instances:
+
+local BruhexeGUI = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local FrameColor = Instance.new("UIGradient")
+local Version = Instance.new("TextLabel")
+local Name = Instance.new("TextLabel")
+local NameColor = Instance.new("UIGradient")
+
+--Properties:
+
+BruhexeGUI.Name = "BruhexeGUI"
+BruhexeGUI.Parent = game.CoreGui
+
+Main.Name = "Main"
+Main.Parent = BruhexeGUI
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(-0.166223407, 0, 0.961165071, 0)
+Main.Size = UDim2.new(0, 133, 0, 20)
+
+FrameColor.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(65, 65, 65)), ColorSequenceKeypoint.new(0.42, Color3.fromRGB(72, 72, 72)), ColorSequenceKeypoint.new(0.56, Color3.fromRGB(96, 96, 96)), ColorSequenceKeypoint.new(0.72, Color3.fromRGB(110, 110, 110)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(120, 120, 120)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+FrameColor.Name = "FrameColor"
+FrameColor.Parent = Main
+
+Version.Name = "Version"
+Version.Parent = Main
+Version.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Version.BackgroundTransparency = 1.000
+Version.Position = UDim2.new(0.713881671, 0, 0.534240723, 0)
+Version.Size = UDim2.new(0, 37, 0, 9)
+Version.Font = Enum.Font.Ubuntu
+Version.Text = "V0.1"
+Version.TextColor3 = Color3.fromRGB(0, 0, 0)
+Version.TextSize = 12.000
+Version.TextStrokeColor3 = Color3.fromRGB(33, 207, 255)
+
+Name.Name = "Name"
+Name.Parent = Main
+Name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name.BackgroundTransparency = 1.000
+Name.Position = UDim2.new(0.0447087102, 0, -0.238362119, 0)
+Name.Size = UDim2.new(0, 89, 0, 29)
+Name.Font = Enum.Font.Ubuntu
+Name.Text = "Bruh.exe"
+Name.TextColor3 = Color3.fromRGB(58, 180, 255)
+Name.TextSize = 27.000
+Name.TextStrokeColor3 = Color3.fromRGB(33, 207, 255)
+
+NameColor.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(47, 130, 255)), ColorSequenceKeypoint.new(0.28, Color3.fromRGB(84, 152, 255)), ColorSequenceKeypoint.new(0.48, Color3.fromRGB(95, 159, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+NameColor.Name = "NameColor"
+NameColor.Parent = Name
+
+-- Scripts:
+
+local function MELDG_fake_script() -- Main.Script 
+	local script = Instance.new('LocalScript', Main)
+
+	local TweenService = game:GetService("TweenService")
+	local Gui = script.Parent
+	
+	local info = TweenInfo.new(
+		0.8, --Length
+		Enum.EasingStyle.Bounce, --Type of Tween (easing style)
+		Enum.EasingDirection.Out, --Easing Direction
+		0, --Ammount of times it repeats
+		false, --Reverse? (go back up)
+		0 --Delay
+	)
+	
+	local Goals =
+	{
+			Position = UDim2.new(0.0, 0,0.961, 0); 
+	}
+	
+	local ButtonTween = TweenService:Create(Gui, info, Goals)	
+	
+	
+	ButtonTween:Play()
+end
+coroutine.wrap(MELDG_fake_script)()
