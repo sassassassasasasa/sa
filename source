@@ -13996,5 +13996,8 @@ for _, child in pairs(game.CoreGui:GetChildren()) do
 if child.Name == "IYrun" then child:Destroy() end end wait(0.5)
 Updates:Destroy() loadstring(game:HttpGet(('https://pastebin.com/raw/MjBzRjmT'),true))() end UPDATE.MouseButton1Down:connect(Click) end 
 else print('İnfinite Yeild Zaten Çalışıyo.') end
+wait(1)
+local sa = game.CoreGui:WaitForChild("ScreenGui")
+sa:Destroy()
 --script end
 end
