@@ -1,22 +1,3 @@
---[[
-    ⬛  ⬛⬛⬛⬛  ⬛  ⬛⬛       ⬛  ⬛  ⬛⬛⬛⬛⬛  ⬛⬛⬛⬛         ⬛⬛⬛    ⬛⬛⬛⬛
-        ⬛           ⬛  ⬛      ⬛         ⬛      ⬛             ⬛     ⬛  ⬛     
-    ⬛  ⬛⬛⬛   ⬛   ⬛   ⬛    ⬛  ⬛      ⬛      ⬛⬛⬛⬛       ⬛⬛⬛⬛   ⬛       
-    ⬛  ⬛       ⬛   ⬛    ⬛   ⬛  ⬛      ⬛      ⬛            ⬛         ⬛     ⬛⬛
-    ⬛  ⬛       ⬛   ⬛      ⬛ ⬛  ⬛      ⬛      ⬛            ⬛         ⬛       ⬛
-    ⬛  ⬛       ⬛   ⬛         ⬛  ⬛      ⬛      ⬛⬛⬛⬛      ⬛         ⬛⬛⬛⬛⬛⬛
-]]--
---UPDATED BY ProGameRoblox#7423
---Please use Infinite Yield PG
---No Website
---https://discord.gg/qZZqesGQ
---2022.07.10
-
---PG : ProGame
-
---Fe Bypass : ????
-
---SCRİPT
 local GUI = Instance.new("ScreenGui")
 local AnnGUI = Instance.new("Frame")
 local background = Instance.new("Frame")
